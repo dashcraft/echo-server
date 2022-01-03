@@ -15,6 +15,17 @@ app.post("*", (req, res) => {
   res.json(req.body);
 });
 
+app.put("*", (req, res) => {
+  console.log("req.body", req.body);
+
+  res.json(req.body);
+});
+
+app.patch("*", (req, res) => {
+  console.log("req.body", req.body);
+
+  res.json(req.body);
+});
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
